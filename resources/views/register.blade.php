@@ -8,6 +8,9 @@
     <title><h1><b>Register</b></h1></title>
 </head>
 <body>
+    <div class = "bg">
+        @include('layout.bg')
+    </div>
     <form method = "POST" action = "/auth/register">
         @csrf
 
