@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <header>
-    @include('layout.header')
+    @include('layout.navbar')
 </header>
 <body>
     <h1><b>Tempat Rental Nomor Satu Se-Indonesia</b></h1>

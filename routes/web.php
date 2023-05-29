@@ -37,9 +37,9 @@ Route::prefix('/product')->group (function () {
     })->name('order');
 
     Route::prefix('/{productID}/cart') -> group (function ($productID) {
-        Route::get('/', [WishlistController::class, 'viewCart']);
-        Route::get('/add', [WishlistController::class, 'addToCart']);
-        Route::get('/remove', [WishlistController::class, 'removeFromCart']);
+        Route::get('/', [CartController::class, 'viewCart']);
+        Route::get('/add', [CartController::class, 'addToCart']);
+        Route::get('/remove', [CartController::class, 'removeFromCart']);
     })->name('cart');
 });
 
